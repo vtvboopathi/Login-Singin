@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login-Signin</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="back">
+        <div class="form">
+            <div class="buttonbox">
+                <div class="log-reg">
+                    <div id="btn" class="btn"></div>
+                    <button class="togglebutton" onclick="login()">Log In</button>
+                    <button class="togglebutton" onclick="signin()">Register</button>
+                </div>
+            </div>
+            <div class="icon">
+                <div class="i"><i class="fa fa-facebook"></i></div>
+                <div class="i"><i class="fa fa-github"></i></div>
+                <div class="i"><i class="fa fa-linkedin"></i></div>
+            </div>
+            <form class="inputall" id="login">
+                <input type="text" placeholder="Enter Username" onclick="" required class="input">
+                <input type="password" placeholder="Enter Password" onclick="" required class="input">
+                <input type="checkbox" class="check"><span>Remember Password</span>
+                <button type="submit" class="submit" onclick="open(web)">Login</button>
+            </form>
+            <form class="inputall" id="signin">
+                <input type="text" placeholder="Enter Username" onclick="" required class="input">
+                <input type="email" placeholder="Enter Email" onclick="" required class="input">
+                <input type="password" placeholder="Enter Password" onclick="" required class="input">
+                <input type="checkbox" class="check"><span>I Accept the tems and Conditions</span>
+                <button type="submit" class="submit">Sign In</button>
+            </form>
+        </div>
+    </div>
+    <div class="vtv"><a href="https://github.com/vtvboopathi">vtv_boopathi</a></div>
+
+<script>
+
+    let x = document.getElementById('login')
+    let y = document.getElementById('signin')
+    let z = document.getElementById('btn')
+
+    function signin(){
+        x.style.left = '-450px'
+        y.style.left = '50px'
+        z.style.left = '110px'
+    }
+
+    function login(){
+        x.style.left = '50px'
+        y.style.left = '450px'
+        z.style.left = '0px'
+    }
+
+</script>
+</body>
+</html>
